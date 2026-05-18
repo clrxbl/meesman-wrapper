@@ -125,7 +125,7 @@ wheels = [
 ]
 
 [[package]]
-name = "meesman-wrapper"
+name = "meesman"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

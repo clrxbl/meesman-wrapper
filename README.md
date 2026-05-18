@@ -1,7 +1,8 @@
 # meesman-wrapper
 
-An unofficial Python wrapper for the [Meesman](https://www.meesman.nl) public API. Ships a typed async client and a FastAPI server that exposes the same functionality over HTTP.
-Be aware that this is not affiliated with Meesman in any way, and is based on reverse engineering the Meesman Android app. Use at own risk.
+An unofficial Python wrapper for the [Meesman Indexbeleggen](https://www.meesman.nl) "public" API. Ships a typed async client and a FastAPI server that exposes the same functionality over HTTP.
+
+Be aware that this is not affiliated with Meesman in any way, and is based on reverse engineering the Meesman Android app as they do not currently provide official API documentation or access. **Use at own risk.**
 
 ## Requirements
 
@@ -27,7 +28,7 @@ The wrapper expects a `session.json` file which is created at `$cwd/data/session
 }
 ```
 
-After setup, the wrapper handles refresh automatically.
+After setup, the wrapper handles refreshing the refresh token automatically.
 
 ## Usage
 
