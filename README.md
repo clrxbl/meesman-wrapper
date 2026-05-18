@@ -10,7 +10,7 @@ A Docker image is available at [ghcr.io/clrxbl/meesman-wrapper](https://ghcr.io/
 
 ```sh
 docker run -d \
-  -v $(pwd)/data:/data \
+  -v $(pwd)/data:/app/data \
   -p 127.0.0.1:8000:8000 \
   --name meesman-wrapper \
   ghcr.io/clrxbl/meesman-wrapper
