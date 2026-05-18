@@ -30,4 +30,4 @@ WORKDIR /app
 COPY --from=builder /app/ /app/
 
 # Run the application
-CMD ["/app/.venv/bin/uvicorn", "meesman.server:app"]
+CMD ["/app/.venv/bin/uvicorn", "meesman.server:app", "--host", "0.0.0.0"]

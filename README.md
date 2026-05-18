@@ -4,15 +4,16 @@ An unofficial Python wrapper for the [Meesman Indexbeleggen](https://www.meesman
 
 Be aware that this is not affiliated with Meesman in any way, and is based on reverse engineering the Meesman Android app as they do not currently provide official API documentation or access. **Use at own risk.**
 
-## Requirements
-
-- Python 3.14+
-- [uv](https://docs.astral.sh/uv/)
-
 ## Installation
 
+A Docker image is available at [ghcr.io/clrxbl/meesman-wrapper](https://ghcr.io/clrxbl/meesman-wrapper) which you can run with:
+
 ```sh
-uv sync
+docker run -d \
+  -v $(pwd)/data:/data \
+  -p 127.0.0.1:8000:8000 \
+  --name meesman-wrapper \
+  ghcr.io/clrxbl/meesman-wrapper
 ```
 
 ## Configuration
